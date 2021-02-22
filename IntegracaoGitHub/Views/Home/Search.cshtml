@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Search";
+}
+
+<div class="row mt-5 mb-5">
+    <div class="card col-md-5 p-4 center bg-light">
+        <div id="Error" class="alert alert-danger col-md-12 text-center collapse" role="alert">
+            <strong>Ocorreu um erro!</strong> <span id="ErrorMessage"></span>
+        </div>
+        <div id="Success" class="alert alert-success col-md-12 text-center collapse" role="alert">
+            <strong>Muito bom!</strong> <span id="SuccessMessage"></span>
+        </div>
+        <form id="form1">
+            <div class="form-group">
+                <label for="inputName">Localizar Repositório</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Nome" minlength="5" autocomplete="off" required>
+            </div>
+            <div class="col-md-9 mt-2 center">
+                <button type="submit" class="btn btn-primary btn-submit" id="btnSubmit">
+                    <i class="fa fa-spinner fa-spin mr-1 d-none"></i>Realizar Consulta
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="repositoryModal" tabindex="-1" role="dialog" aria-labelledby="repositoryModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="repositoryModalLabel">Detalhes</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <span id="repositoryNameSpan"></span> <br />
+                <span id="repositoryDescriptionSpan"></span> <br />
+                <span id="repositoryLanguageSpan"></span> <br />
+                <span id="repositoryUpdateSpan"></span> <br />
+                <span id="repositoryOwnerSpan"></span>
+
+                <table id="repositoryCollaboratorsTable" class="table table-hover text-left responsive mt-3">
+                    <thead>
+                        <tr>
+                            <th>Contribuidores</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="card col-md-7 center bg-light">
+        <div class="panel panel-primary">
+            <div id="gitHubPanelBody" class="panel-body collapse">
+                <table id="gitHuTable" class="table table-hover text-left responsive" style="width:100%">
+                    <thead class="overflow-hidden">
+                        <tr>
+                            <th>id</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/js/home/search.js"></script>
+}

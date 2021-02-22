@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1267
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegracaoGitHub", "IntegracaoGitHub\IntegracaoGitHub.csproj", "{8A2441A6-DD26-47E2-A8F6-11971C34F48E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegracaoGitHub.Tests", "IntegracaoGitHub.Tests\IntegracaoGitHub.Tests.csproj", "{3F742EC4-AA43-41AA-9CA9-9B345CD2F083}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A2441A6-DD26-47E2-A8F6-11971C34F48E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A2441A6-DD26-47E2-A8F6-11971C34F48E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A2441A6-DD26-47E2-A8F6-11971C34F48E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A2441A6-DD26-47E2-A8F6-11971C34F48E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F742EC4-AA43-41AA-9CA9-9B345CD2F083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F742EC4-AA43-41AA-9CA9-9B345CD2F083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F742EC4-AA43-41AA-9CA9-9B345CD2F083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F742EC4-AA43-41AA-9CA9-9B345CD2F083}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97D78F8F-4CB4-45F9-9E5A-5FCFFD0088C8}
+	EndGlobalSection
+EndGlobal
